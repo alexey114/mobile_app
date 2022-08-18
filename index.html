@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile app</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="containerApp">
+        <div class="subcontainerApp">
+            <h1 class="header_function">Функции браузера</h1>
+            <button class="button realize" onclick="callGPS()">GPS</button>
+            <button class="button realize" onclick="callNotification()">Уведомление</button>
+            <!-- <div class="block">
+                <button id="start" class="button button_rec realize">Запись звука</button>
+                <button id="stop" class="button button_stop realize">Стоп</button>
+            </div> -->
+            <a href="tel:+79296538035"><button class="button realize">Позвонить</button></a>
+            <button class="button realize flashlight__button">Фонарик</button>
+            <div class="block_photo">
+                <button id="snap" class="button realize">Сделать снимок</button>
+                <div class="inner_photo">
+                    <video id="photo" width="160" height="120" autoplay></video>
+                    <canvas id="canvas" width="160" height="120"></canvas>
+                    <canvas id="canvas_photo" width="160" height="120"></canvas>
+                </div>
+            </div>
+
+            <div class="block_video block_column">
+                <div class="block_video block_video_button">
+                    <div>
+                        <button id="startButton" class="button button_rec realize">Start</button>
+                        <div>
+                            <label for="checkbox">Записать с видео</label>
+                            <input type="checkbox" id="checkboxVideo" checked>
+                        </div>
+                    </div>
+                    
+                    <button id="stopButton" class="button realize">Стоп</button>
+                </div>
+                <div class="block_video block_video_recording">
+                    <div class="preview">
+                        <h2>Предпросмотр</h2>
+                        <video id="preview" width="160" height="120" autoplay muted></video>
+                    </div>
+                    <div class="turntable block_column">
+                        <h2>Проигрыватель</h2>
+                        <video id="recording" width="160" height="120" controls></video>
+                        <a id="downloadButton">
+                            <button class="button realize">Скачать видео</button>
+                        </a>
+                    </div>
+                </div>
+                <div id="log"></div>
+            </div>
+        </div>
+        <div id="files" class="files">
+
+        </div>
+        <!-- <div class="subcontainerApp">
+            <h1 class="header_function">Функции мобильного</h1>
+            <button class="button noRealize">GPS</button>
+            <button class="button noRealize">Уведомление</button>
+            <div class="block">
+                <button class="button button_rec noRealize">Запись звука</button>
+                <button class="button button_stop noRealize">Стоп</button>
+            </div>
+            <button class="button noRealize">Запись камеры</button>
+            <button class="button noRealize">Включение фонарика</button>
+            <button class="button noRealize">Позвонить</button>
+        </div>
+        <div class="subcontainerApp">
+            <h1 class="header_function">Функции мобильного браузера</h1>
+            <button class="button noRealize">GPS</button>
+            <button class="button noRealize">Уведомление</button>
+            <button class="button noRealize">Запись звука</button>
+            <button class="button noRealize">Запись камеры</button>
+            <button class="button noRealize">Включение фонарика</button>
+            <button class="button noRealize">Позвонить</button>
+        </div> -->
+    </div>
+    <script src="js/index.js"></script>
+    <!-- <script src="js/recorder.js"></script> -->
+    <script src="js/photo.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/flashlight.js"></script>
+</body>
+
+</html>
